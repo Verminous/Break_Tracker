@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 app.use(compression()); 
 
-//======================
+//=======================
 // ENVIRONMENT VARIABLES
 
 dotenv.config({ path: "variables.env" });
