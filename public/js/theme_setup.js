@@ -82,7 +82,7 @@ const removeDarkMode = () => {
 
 //////////////////// - SET UP THEME ON 1ST RUN - /////////////////////
 
-document.documentElement.dataset.theme = localStorage.getItem("last-theme-used") || "light";
+document.documentElement.dataset.theme = localStorage.getItem("last-theme-used") || "dark";
 
 ///////////// - GET LAST THEME CHOSEN - //////////////////
 
@@ -96,5 +96,5 @@ if (localStorage.getItem("last-theme-used") === "dark") {
   myRoot.dataset.theme = "light";
 } else {
   injectLightMode();
-  myRoot.dataset.theme = "light";
+  myRoot.dataset.theme = "dark";
 };
